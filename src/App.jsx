@@ -25,15 +25,17 @@ function App() {
   return (
     <Box sx={{ width: "100vw", height: "100vh" }}>
       <NavBar />
-      <Grid container spacing={2} sx={{ flexGrow: 1 }}>
-        {showDrawerOnPaths.includes(location.pathname) && <Navigation />}
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/email" element={<Test />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/files" element={<Files />} />
-        </Routes>
-      </Grid>
+      <Box>
+        <Grid container spacing={2} sx={{ flexGrow: 1 }}>
+          {showDrawerOnPaths.includes(location.pathname) && <Navigation />}
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/email" element={<Test />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/files" element={<Files />} />
+          </Routes>
+        </Grid>
+      </Box>
     </Box>
   );
 }

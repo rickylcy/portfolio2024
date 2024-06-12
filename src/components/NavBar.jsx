@@ -49,6 +49,7 @@ export default function NavBar() {
         flexGrow: 1,
         justifyContent: "space-between",
         p: 2,
+        width: "100%",
       }}
     >
       <Stack

@@ -4,9 +4,10 @@ import App from "./App.jsx";
 import "@fontsource/inter";
 import { CssBaseline, CssVarsProvider } from "@mui/joy";
 import { BrowserRouter as Router } from "react-router-dom";
+import theme from "./Theme.jsx";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <CssVarsProvider disableTransitionOnChange>
+    <CssVarsProvider disableTransitionOnChange theme={theme}>
       <CssBaseline />
       <Router>
         <App />
