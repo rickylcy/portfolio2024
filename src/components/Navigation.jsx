@@ -17,7 +17,7 @@ import Grid from "@mui/joy/Grid";
 
 export default function Navigation() {
   return (
-    <Grid item="true" xs={0} md={2} lg={2}>
+    <Grid item xs={0} md={2} lg={2}>
       <List
         size="sm"
         sx={{

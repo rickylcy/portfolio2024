@@ -22,7 +22,8 @@ function App() {
 
   return (
     <Box
-    /* sx={{
+      sx={{ fontFamily: "Poppins, sans-serif" }}
+      /* sx={{
         width: "100vw",
         height: "100vh",
         display: "flex",
@@ -30,28 +31,16 @@ function App() {
         alignItems: "center",
       }} */
     >
-      <Container sx={{ maxWidth: "1200px", width: "100%" }}>
-        <NavBar />
-        <Box sx={{}}>
-          <Grid
-            containers
-            spacing={2}
-            sx={{
-              flexGrow: 1,
-              direction: "row",
-              justifyContent: "center",
-              alignItems: "center",
-            }}
-          >
-            {showDrawerOnPaths.includes(location.pathname) && <Navigation />}
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/email" element={<Test />} />
-              <Route path="/team" element={<Team />} />
-              <Route path="/files" element={<Files />} />
-            </Routes>
-          </Grid>
-        </Box>
+      <Container>
+        <NavBar
+          display={{ xs: "none", sm: "none", md: "block", lg: "block" }}
+        />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/email" element={<Test />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/files" element={<Files />} />
+        </Routes>
       </Container>
     </Box>
   );

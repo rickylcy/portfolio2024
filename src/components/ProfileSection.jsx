@@ -6,19 +6,16 @@ import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import profileImg from "../assets/profile.jpg";
+import MouseIcon from "@mui/icons-material/Mouse";
+import { Link as ScrollLink } from "react-scroll";
 
 const ProfileSection = () => {
-  const handleScrollDown = () => {
-    window.scrollBy({
-      top: window.innerHeight,
-      behavior: "smooth",
-    });
-  };
-
   return (
     <Box
+      id="home"
       sx={{
-        height: { md: "90vh", lg: "90vh" },
+        paddingTop: { sm: "10vh", xs: "10vh" },
+        height: { xs: "100vh", sm: "100vh", md: "100vh", lg: "100vh" },
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
@@ -138,13 +135,22 @@ const ProfileSection = () => {
             order: { xs: 5, sm: 5, md: 5, lg: 5 },
           }}
           align="center"
+          display={{ xs: "none", sm: "none", md: "block", lg: "block" }}
         >
-          <Box onClick={handleScrollDown} sx={{ cursor: "pointer" }}>
+          <ScrollLink
+            to="about-me"
+            smooth={true}
+            duration={500}
+            spy={true}
+            offset={-70}
+            style={{ cursor: "pointer" }}
+          >
+            <MouseIcon />
             <Typography level="body2" sx={{ marginBottom: 1 }}>
               Scroll down
             </Typography>
             <ArrowDownwardIcon />
-          </Box>
+          </ScrollLink>
         </Grid>
       </Grid>
     </Box>

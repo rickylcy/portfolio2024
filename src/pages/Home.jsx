@@ -34,6 +34,7 @@ import PeopleAltRoundedIcon from "@mui/icons-material/PeopleAltRounded";
 import FolderRoundedIcon from "@mui/icons-material/FolderRounded";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import ProfileSection from "../components/ProfileSection";
+import AboutMeSection from "../components/AboutMeSection";
 
 function Home() {
   const jobExperience = [
@@ -71,7 +72,12 @@ function Home() {
         padding: 2,
       }}
     >
-      <ProfileSection />
+      <Box>
+        <ProfileSection />
+      </Box>
+      <Box>
+        <AboutMeSection />
+      </Box>
       <Sheet
         component="li"
         variant="outlined"

@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import App from "./App.jsx";
-import "@fontsource/inter";
+import "./App.css";
 import { CssBaseline, CssVarsProvider } from "@mui/joy";
 import { BrowserRouter as Router } from "react-router-dom";
 import theme from "./Theme.jsx";
