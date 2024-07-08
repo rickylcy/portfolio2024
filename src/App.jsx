@@ -1,7 +1,5 @@
 import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import { Box } from "@mui/joy";
+import { Box, Container } from "@mui/joy";
 import NavBar from "./components/NavBar";
 
 import {
@@ -23,19 +21,38 @@ function App() {
   const showDrawerOnPaths = ["/email", "/team", "/files"];
 
   return (
-    <Box sx={{ width: "100vw", height: "100vh" }}>
-      <NavBar />
-      <Box>
-        <Grid container spacing={2} sx={{ flexGrow: 1 }}>
-          {showDrawerOnPaths.includes(location.pathname) && <Navigation />}
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/email" element={<Test />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/files" element={<Files />} />
-          </Routes>
-        </Grid>
-      </Box>
+    <Box
+    /* sx={{
+        width: "100vw",
+        height: "100vh",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+      }} */
+    >
+      <Container sx={{ maxWidth: "1200px", width: "100%" }}>
+        <NavBar />
+        <Box sx={{}}>
+          <Grid
+            containers
+            spacing={2}
+            sx={{
+              flexGrow: 1,
+              direction: "row",
+              justifyContent: "center",
+              alignItems: "center",
+            }}
+          >
+            {showDrawerOnPaths.includes(location.pathname) && <Navigation />}
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/email" element={<Test />} />
+              <Route path="/team" element={<Team />} />
+              <Route path="/files" element={<Files />} />
+            </Routes>
+          </Grid>
+        </Box>
+      </Container>
     </Box>
   );
 }

@@ -33,6 +33,7 @@ import EmailRoundedIcon from "@mui/icons-material/EmailRounded";
 import PeopleAltRoundedIcon from "@mui/icons-material/PeopleAltRounded";
 import FolderRoundedIcon from "@mui/icons-material/FolderRounded";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
+import ProfileSection from "../components/ProfileSection";
 
 function Home() {
   const jobExperience = [
@@ -70,6 +71,7 @@ function Home() {
         padding: 2,
       }}
     >
+      <ProfileSection />
       <Sheet
         component="li"
         variant="outlined"
