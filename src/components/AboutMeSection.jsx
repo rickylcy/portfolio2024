@@ -116,13 +116,13 @@ const AboutMeSection = () => {
               justifyContent: "center",
               flexDirection: "column",
               alignItems: "center",
-              padding: 2,
+              padding: 0,
             }}
           >
             <Typography
               level="body1"
-              p={{ xs: 5, sm: 4, md: 3, lg: 2 }}
-              m={{ md: 2, lg: 2 }}
+              p={{ xs: 0, sm: 2, md: 3, lg: 2 }}
+              m={{ xs: 2, sm: 2, md: 2, lg: 2 }}
             >
               Frontend developer, I create web pages with UI / UX user
               interface, I have years of experience and many clients are happy
