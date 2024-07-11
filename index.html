@@ -11,19 +11,22 @@
     <style>
       html,
       body {
-        touch-action: manipulation;
-        -ms-touch-action: manipulation;
+        height: 100%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scrolling */
       }
 
-      @media (max-width: 768px) {
-        html {
-          overflow: hidden;
-        }
+      body {
+        -webkit-touch-callout: none; /* Prevent callout to copy image, etc when tap to hold */
+        -webkit-text-size-adjust: 100%; /* Prevent font scaling in landscape mode */
+        -webkit-user-select: none; /* Prevent copy paste, to allow, change 'none' to 'text' */
+        -webkit-overflow-scrolling: touch; /* Enable momentum scrolling on iOS */
+      }
 
-        body {
-          position: fixed;
-          width: 100%;
-        }
+      * {
+        max-width: 100%; /* Prevent elements from growing beyond the viewport */
       }
     </style>
   </head>
