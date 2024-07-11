@@ -52,10 +52,11 @@ const SkillsSection = () => {
       id="skills"
       sx={{
         padding: { xs: 0, sm: 0, md: 3, lg: 4 },
-        height: { md: "100vh", lg: "100vh" },
+        height: { xs: "100vh", sm: "100vh", md: "100vh", lg: "100vh" },
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        justifyContent: "center",
       }}
     >
       <Typography level="h1" sx={{ marginBottom: 2 }}>
