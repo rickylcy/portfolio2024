@@ -47,6 +47,7 @@ const AboutMeSection = () => {
         <Grid item xs={12} sm={12} md={7} lg={7} p={6}>
           <Box
             sx={{
+              flexDirection: "row",
               display: "flex",
               justifyContent: "center",
               padding: 2,
