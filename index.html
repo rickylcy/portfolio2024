@@ -7,7 +7,25 @@
       name="viewport"
       content="width=device-width, maximum-scale=1, user-scalable=no, initial-scale=1.0"
     />
-    <title>Ricky Lau TEST</title>
+    <title>Ricky Lau</title>
+    <style>
+      html,
+      body {
+        touch-action: manipulation;
+        -ms-touch-action: manipulation;
+      }
+
+      @media (max-width: 768px) {
+        html {
+          overflow: hidden;
+        }
+
+        body {
+          position: fixed;
+          width: 100%;
+        }
+      }
+    </style>
   </head>
   <body>
     <div id="root"></div>

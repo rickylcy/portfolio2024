@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Box, Container } from "@mui/joy";
 import NavBar from "./components/NavBar";
-
+import "./App.css";
 import {
   BrowserRouter as Router,
   Route,
