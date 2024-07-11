@@ -1,16 +1,16 @@
 // src/components/ScrollToTopButton.js
-import React, { useState, useEffect } from "react";
-import { Box, IconButton } from "@mui/joy";
+import React, { useEffect, useState } from "react";
+import { Box, Button } from "@mui/joy";
 import ArrowUpwardIcon from "@mui/icons-material/ArrowUpward";
 
 const ScrollToTopButton = () => {
-  const [visible, setVisible] = useState(false);
+  const [isVisible, setIsVisible] = useState(false);
 
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
-      setVisible(true);
+      setIsVisible(true);
     } else {
-      setVisible(false);
+      setIsVisible(false);
     }
   };
 
@@ -23,22 +23,36 @@ const ScrollToTopButton = () => {
 
   useEffect(() => {
     window.addEventListener("scroll", toggleVisibility);
-    return () => window.removeEventListener("scroll", toggleVisibility);
+    return () => {
+      window.removeEventListener("scroll", toggleVisibility);
+    };
   }, []);
 
   return (
     <Box
       sx={{
         position: "fixed",
-        bottom: 16,
-        right: 16,
-        display: visible ? "flex" : "none",
+        bottom: "2rem",
+        right: "2rem",
+        display: { xs: "none", md: isVisible ? "block" : "none" },
         zIndex: 1000,
       }}
     >
-      <IconButton onClick={scrollToTop} sx={{ bgcolor: "primary.main" }}>
-        <ArrowUpwardIcon sx={{ color: "white" }} />
-      </IconButton>
+      <Button
+        onClick={scrollToTop}
+        variant="solid"
+        sx={{
+          borderRadius: "20%",
+          width: "3vw",
+          height: "5vh",
+          minWidth: "3vw",
+          minHeight: "5vh",
+          padding: 0,
+          bgcolor: "primary.main",
+        }}
+      >
+        <ArrowUpwardIcon />
+      </Button>
     </Box>
   );
 };

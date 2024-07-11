@@ -9,7 +9,7 @@ const theme = extendTheme({
           contrastText: "#ffffff", // text color on primary background
         },
         secondary: {
-          main: "#E09E50", // secondary main color
+          main: "#989898", // secondary main color
           contrastText: "#ffffff", // text color on secondary background
         },
         accent: {
@@ -116,16 +116,8 @@ const theme = extendTheme({
     },
     JoyTypography: {
       styleOverrides: {
-        root: ({ theme, ownerState }) => ({
-          ...(ownerState.variant === "h1" && {
-            color: theme.palette.primary.main,
-          }),
-          ...(ownerState.variant === "h2" && {
-            color: theme.palette.secondary.main,
-          }),
-          ...(ownerState.variant === "body1" && {
-            color: theme.palette.text.primary,
-          }),
+        root: ({ theme }) => ({
+          color: theme.palette.primary.main, // default color for all typography
         }),
       },
     },

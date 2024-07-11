@@ -2,19 +2,21 @@
 import React from "react";
 import { Box, Typography, Button, Grid, Sheet } from "@mui/joy";
 import profileImg from "../assets/profile.jpg";
-import MilitaryTechIcon from "@mui/icons-material/MilitaryTech";
+import LightbulbIcon from "@mui/icons-material/Lightbulb";
+import WorkIcon from "@mui/icons-material/Work";
+import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
+import DescriptionIcon from "@mui/icons-material/Description";
 
 const AboutMeSection = () => {
   return (
     <Box
       id="about-me"
       sx={{
+        padding: { xs: 0, sm: 0, md: 3, lg: 4 },
         height: { md: "100vh", lg: "100vh" },
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
-        backgroundColor: "#f7f1ed",
-        textAlign: "center",
       }}
     >
       <Typography level="h2" sx={{ marginBottom: 1 }}>
@@ -26,21 +28,28 @@ const AboutMeSection = () => {
       >
         My introduction
       </Typography>
-      <Grid container spacing={4} justifyContent="center">
-        <Grid item xs={12} sm={4} md={3}>
-          <img
+      <Grid container spacing={{ xs: 0, sm: 0, md: 4, lg: 4 }}>
+        <Grid item xs={12} sm={12} md={5} lg={5}>
+          <Box
+            component="img"
             src={profileImg}
             alt="Profile"
-            style={{
-              width: "100%",
-              borderRadius: "10%",
-              boxShadow: "0 0 10px rgba(0, 0, 0, 0.1)",
+            sx={{
+              width: { xs: "60%", sm: "80%", md: "100%", lg: "100%" },
+              height: "100%",
+              borderRadius: "8%",
+              display: "block",
+              margin: "0 auto", // Centers the image
             }}
           />
         </Grid>
-        <Grid item xs={12} sm={8} md={7}>
+        <Grid item xs={12} sm={12} md={7} lg={7} p={6}>
           <Box
-            sx={{ display: "flex", justifyContent: "center", marginBottom: 4 }}
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              padding: 2,
+            }}
           >
             <Sheet
               variant="outlined"
@@ -48,29 +57,85 @@ const AboutMeSection = () => {
                 borderRadius: "md",
                 p: 3,
                 listStyle: "none",
+                flexGrow: 1,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
               }}
             >
-              <MilitaryTechIcon />
+              <LightbulbIcon />
               <Typography level="h6">Experience</Typography>
-              <Typography level="body2">8+ Years</Typography>
+              <Typography level="body2" sx={{ color: "secondary.main" }}>
+                8+ Years
+              </Typography>
             </Sheet>
-            <Box sx={{ margin: 2 }}>
+
+            <Sheet
+              variant="outlined"
+              sx={{
+                borderRadius: "md",
+                p: 3,
+                listStyle: "none",
+                flexGrow: 1,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <WorkIcon />
               <Typography level="h6">Completed</Typography>
-              <Typography level="body2">48+ Projects</Typography>
-            </Box>
-            <Box sx={{ margin: 2 }}>
+              <Typography level="body2" sx={{ color: "secondary.main" }}>
+                48+ Projects
+              </Typography>
+            </Sheet>
+
+            <Sheet
+              variant="outlined"
+              sx={{
+                borderRadius: "md",
+                p: 3,
+                listStyle: "none",
+                flexGrow: 1,
+                display: "flex",
+                flexDirection: "column",
+                alignItems: "center",
+              }}
+            >
+              <HeadsetMicIcon />
               <Typography level="h6">Support</Typography>
-              <Typography level="body2">Online 24/7</Typography>
-            </Box>
+              <Typography level="body2" sx={{ color: "secondary.main" }}>
+                Online 24/7
+              </Typography>
+            </Sheet>
           </Box>
-          <Typography level="body1" sx={{ marginBottom: 4 }}>
-            Frontend developer, I create web pages with UI / UX user interface,
-            I have years of experience and many clients are happy with the
-            projects carried out.
-          </Typography>
-          <Button variant="solid" color="primary">
-            Download CV
-          </Button>
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
+              flexDirection: "column",
+              alignItems: "center",
+              padding: 2,
+            }}
+          >
+            <Typography
+              level="body1"
+              p={{ xs: 5, sm: 4, md: 3, lg: 2 }}
+              m={{ md: 2, lg: 2 }}
+            >
+              Frontend developer, I create web pages with UI / UX user
+              interface, I have years of experience and many clients are happy
+              with the projects carried out.
+            </Typography>
+            <Button
+              variant="solid"
+              sx={{
+                bgcolor: "primary.main",
+                width: "auto",
+              }}
+            >
+              Download CV <DescriptionIcon />
+            </Button>
+          </Box>
         </Grid>
       </Grid>
     </Box>

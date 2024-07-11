@@ -14,7 +14,6 @@ const ProfileSection = () => {
     <Box
       id="home"
       sx={{
-        paddingTop: { sm: "10vh", xs: "10vh" },
         height: { xs: "100vh", sm: "100vh", md: "100vh", lg: "100vh" },
         display: "flex",
         flexDirection: "column",
@@ -59,22 +58,23 @@ const ProfileSection = () => {
         >
           <Box
             sx={{
+              padding: { sm: 2, lg: 5 },
               flexDirection: "column",
               display: "flex",
               justifyContent: "center",
             }}
           >
             <Stack direction="column" spacing={{ xs: 4, sm: 4, md: 6, lg: 6 }}>
-              <Typography level="h1" sx={{ marginBottom: 1 }}>
+              <Typography level="h1">
                 Ricky Lau
                 <span role="img" aria-label="wave">
                   👋
                 </span>
               </Typography>
-              <Typography level="body2" sx={{ color: "text.secondary" }}>
+              <Typography level="h4" sx={{ color: "text.secondary" }}>
                 Web Developer
               </Typography>
-              <Typography level="body1">
+              <Typography level="body-lg">
                 I'm a Full Stack Developer based in Brisbane, Australia, and I'm
                 very passionate and dedicated to my work.
               </Typography>

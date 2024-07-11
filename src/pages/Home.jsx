@@ -35,6 +35,8 @@ import FolderRoundedIcon from "@mui/icons-material/FolderRounded";
 import PersonRoundedIcon from "@mui/icons-material/PersonRounded";
 import ProfileSection from "../components/ProfileSection";
 import AboutMeSection from "../components/AboutMeSection";
+import ScrollToTopButton from "../components/ScrollToTopButton";
+import SkillsSection from "../components/SkillsSection";
 
 function Home() {
   const jobExperience = [
@@ -78,6 +80,10 @@ function Home() {
       <Box>
         <AboutMeSection />
       </Box>
+      <Box>
+        <SkillsSection />
+      </Box>
+      <ScrollToTopButton />
       <Sheet
         component="li"
         variant="outlined"
