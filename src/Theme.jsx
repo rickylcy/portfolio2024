@@ -75,6 +75,8 @@ const theme = extendTheme({
         root: ({ theme }) => ({
           borderRadius: "8px",
           textTransform: "none",
+          bgcolor: theme.palette.primary.main,
+          width: "auto",
           "&:hover": {
             backgroundColor: theme.palette.primary.main,
             color: theme.palette.primary.contrastText,

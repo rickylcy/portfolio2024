@@ -37,6 +37,7 @@ import ProfileSection from "../components/ProfileSection";
 import AboutMeSection from "../components/AboutMeSection";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import SkillsSection from "../components/SkillsSection";
+import ServicesSection from "../components/ServicesSection";
 
 function Home() {
   const jobExperience = [
@@ -82,6 +83,9 @@ function Home() {
       </Box>
       <Box>
         <SkillsSection />
+      </Box>
+      <Box>
+        <ServicesSection />
       </Box>
       <ScrollToTopButton />
       <Sheet

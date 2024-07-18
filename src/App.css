@@ -9,6 +9,13 @@
   animation: profile_animate 8s ease-in-out infinite 1s;
 }
 
+/* src/index.css or App.css */
+.MuiModal-root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 @keyframes profile_animate {
   0% {
     border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
