@@ -38,6 +38,7 @@ import AboutMeSection from "../components/AboutMeSection";
 import ScrollToTopButton from "../components/ScrollToTopButton";
 import SkillsSection from "../components/SkillsSection";
 import ServicesSection from "../components/ServicesSection";
+import QualificationSection from "../components/QualificationSection";
 
 function Home() {
   const jobExperience = [
@@ -87,43 +88,11 @@ function Home() {
       <Box>
         <ServicesSection />
       </Box>
+      <Box>
+        <QualificationSection />
+      </Box>
       <ScrollToTopButton />
-      <Sheet
-        component="li"
-        variant="outlined"
-        sx={{
-          borderRadius: "sm",
-          p: 2,
-          listStyle: "none",
-        }}
-      >
-        <List sx={{ "--ListItemDecorator-size": "40px", gap: 2 }}>
-          {jobExperience.map((company, companyIndex) => (
-            <ListItem key={companyIndex} sx={{ alignItems: "flex-start" }}>
-              <ListItemDecorator
-                sx={{
-                  "&::before": {
-                    content: '""',
-                    position: "absolute",
-                    height: "100%",
-                    width: "1px",
-                    bgcolor: "divider",
-                    left: "calc(var(--ListItem-paddingLeft) + 12px)",
-                    top: "50%",
-                  },
-                }}
-              >
-                <Avatar src={company.logo} sx={{ "--Avatar-size": "24px" }} />
-              </ListItemDecorator>
-              <ListItemContent>
-                <Typography level="body1">{company.role}</Typography>
-                <Typography level="body-xs">{company.name}</Typography>
-              </ListItemContent>
-              <Typography level="body-xs">{company.years}</Typography>
-            </ListItem>
-          ))}
-        </List>
-      </Sheet>
+
       <ProjectCard
         title={project.title}
         description={project.description}

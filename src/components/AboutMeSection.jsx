@@ -20,7 +20,7 @@ const AboutMeSection = () => {
         justifyContent: "center",
       }}
     >
-      <Typography level="h2" sx={{ marginBottom: 1 }}>
+      <Typography level="h2" sx={{ marginBottom: 1, color: "text.secondary" }}>
         About Me
       </Typography>
       <Typography

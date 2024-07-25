@@ -57,6 +57,7 @@ const SkillsSection = () => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
+        color: "text.secondary",
       }}
     >
       <Typography level="h1" sx={{ marginBottom: 2 }}>

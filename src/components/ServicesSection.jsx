@@ -2,11 +2,15 @@
 import React, { useState } from "react";
 import { Box, Typography, Grid, Sheet, Button } from "@mui/joy";
 import ServiceDetails from "./ServiceDetails";
+import WebIcon from "@mui/icons-material/Web";
+import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
+import DesignServicesIcon from "@mui/icons-material/DesignServices";
 
 const services = [
   {
     title: "Web Designer",
     description: "View More",
+    icon: <WebIcon sx={{ fontSize: "2.5rem" }} />,
     details: [
       "I develop the user interface.",
       "Web page development.",
@@ -18,6 +22,7 @@ const services = [
   {
     title: "UI/UX Designer",
     description: "View More",
+    icon: <SupervisorAccountIcon sx={{ fontSize: "2.5rem" }} />,
     details: [
       "I design user interfaces.",
       "User experience improvements.",
@@ -29,6 +34,7 @@ const services = [
   {
     title: "Branding Designer",
     description: "View More",
+    icon: <DesignServicesIcon sx={{ fontSize: "2.5rem" }} />,
     details: [
       "Brand identity design.",
       "Logo creation.",
@@ -51,16 +57,25 @@ const ServicesSection = () => {
         variant="outlined"
         sx={{
           borderRadius: "md",
-          padding: 4,
+          padding: 5,
           listStyle: "none",
           height: "100%",
           display: "flex",
           flexDirection: "column",
           justifyContent: "space-between",
+          alignItems: "center",
         }}
       >
-        <Box sx={{ mb: 2 }}>
-          <Typography level="h4" sx={{ marginBottom: 2 }} align="center">
+        <Box
+          sx={{
+            mb: 2,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+          }}
+        >
+          {service.icon}
+          <Typography level="h4" p={3} align="center">
             {service.title}
           </Typography>
         </Box>
@@ -84,15 +99,15 @@ const ServicesSection = () => {
     <Box
       id="services"
       sx={{
-        padding: { xs: 0, sm: 0, md: 3, lg: 4 },
-        height: { xs: "100vh", sm: "100vh", md: "100vh", lg: "100vh" },
+        padding: { xs: 2, sm: 3, md: 4, lg: 4 },
+        minHeight: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
       }}
     >
-      <Typography level="h1" sx={{ marginBottom: 2 }}>
+      <Typography level="h1" sx={{ color: "text.secondary", marginBottom: 2 }}>
         Services
       </Typography>
       <Typography

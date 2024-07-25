@@ -70,21 +70,22 @@ const ProjectBox = ({
         </Box>
         <Box sx={{ display: "flex", justifyContent: "flex-end", gap: 2 }}>
           <Button
-            variant="outlined"
-            starticon={<GitHubIcon />}
             component="a"
             href={codeLink}
             target="_blank"
+            sx={{ bgcolor: "text.secondary" }}
           >
+            <GitHubIcon />
             Code
           </Button>
           <Button
             variant="solid"
-            starticon={<OpenInNewIcon />}
             component="a"
             href={liveDemoLink}
             target="_blank"
+            sx={{ bgcolor: "text.secondary" }}
           >
+            <OpenInNewIcon />
             Live Demo
           </Button>
         </Box>

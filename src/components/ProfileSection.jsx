@@ -65,7 +65,7 @@ const ProfileSection = () => {
             }}
           >
             <Stack direction="column" spacing={{ xs: 4, sm: 4, md: 6, lg: 6 }}>
-              <Typography level="h1">
+              <Typography level="h1" sx={{ color: "text.secondary" }}>
                 Ricky Lau
                 <span role="img" aria-label="wave">
                   👋
