@@ -104,6 +104,7 @@ const QualificationSection = () => {
       sx={{
         padding: { xs: 2, sm: 3, md: 4, lg: 4 },
         minHeight: "100vh",
+        height: "100vh",
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

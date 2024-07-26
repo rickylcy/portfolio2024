@@ -13,6 +13,7 @@ const AboutMeSection = () => {
       id="about-me"
       sx={{
         padding: { xs: 0, sm: 0, md: 3, lg: 4 },
+        minHeight: "100vh",
         height: { xs: "100vh", sm: "100vh", md: "100vh", lg: "100vh" },
         display: "flex",
         flexDirection: "column",
