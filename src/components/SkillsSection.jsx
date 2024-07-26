@@ -69,13 +69,13 @@ const SkillsSection = () => {
       >
         My technical level
       </Typography>
-      <Grid container spacing={4} justifyContent="center">
+      <Grid container spacing={1} justifyContent="center">
         <Grid item xs={12} sm={6}>
           <Sheet
             variant="outlined"
             sx={{
               borderRadius: "md",
-              padding: 4,
+              padding: { lg: 4, sm: 2, xs: 2 },
               listStyle: "none",
               height: "100%",
             }}
@@ -98,7 +98,7 @@ const SkillsSection = () => {
             variant="outlined"
             sx={{
               borderRadius: "md",
-              padding: { lg: 4, sm: 1 },
+              padding: { lg: 4, sm: 2, xs: 2 },
               listStyle: "none",
               height: "100%",
             }}
