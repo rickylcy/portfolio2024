@@ -35,10 +35,7 @@ const NavBar = () => {
           alignItems: "center",
         }}
       >
-        <Typography
-          level="body"
-          sx={{ fontWeight: "bold", paddingLeft: "10px" }}
-        >
+        <Typography level="h4" sx={{ fontWeight: "bold", paddingLeft: "10px" }}>
           Ricky
         </Typography>
         <IconButton onClick={toggleNav} sx={{ paddingRight: "10px" }}>
