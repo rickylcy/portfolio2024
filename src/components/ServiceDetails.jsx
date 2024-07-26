@@ -1,4 +1,3 @@
-// src/components/ServiceDetails.js
 import React from "react";
 import {
   Modal,
@@ -18,14 +17,18 @@ const ServiceDetails = ({ open, onClose, title, details }) => {
     <Modal open={open} onClose={onClose}>
       <Box
         sx={{
+          position: "absolute",
           top: "50%",
           left: "50%",
           transform: "translate(-50%, -50%)",
-          width: { xs: 300, sm: 400, md: 500 },
+          width: { xs: "90%", sm: "80%", md: "60%" },
+          maxWidth: "500px",
           bgcolor: "background.paper",
           borderRadius: "md",
           boxShadow: 24,
-          p: 4,
+          p: 2,
+          maxHeight: "80vh",
+          overflow: "auto",
         }}
       >
         <Box sx={{ display: "flex", justifyContent: "space-between", mb: 2 }}>

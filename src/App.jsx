@@ -12,6 +12,7 @@ import {
 import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
 import Grid from "@mui/joy/Grid";
+import BottomNavBar from "./components/BottomNavBar";
 
 function App() {
   const location = useLocation();
@@ -35,6 +36,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
         </Routes>
+        <BottomNavBar />
       </Container>
     </Box>
   );
