@@ -126,7 +126,6 @@ const QualificationSection = () => {
         <Button
           onClick={() => setSelectedContent("work")}
           variant="plain"
-          startIcon={<WorkIcon />}
           sx={{
             display: "flex",
             flexDirection: "column",
@@ -140,7 +139,6 @@ const QualificationSection = () => {
         <Button
           onClick={() => setSelectedContent("study")}
           variant="plain"
-          startIcon={<SchoolIcon />}
           sx={{
             display: "flex",
             flexDirection: "column",

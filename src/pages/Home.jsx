@@ -39,6 +39,7 @@ import ScrollToTopButton from "../components/ScrollToTopButton";
 import SkillsSection from "../components/SkillsSection";
 import ServicesSection from "../components/ServicesSection";
 import QualificationSection from "../components/QualificationSection";
+import TestimonialSection from "../components/TestimonialSection";
 
 function Home() {
   const jobExperience = [
@@ -90,6 +91,9 @@ function Home() {
       </Box>
       <Box>
         <QualificationSection />
+      </Box>
+      <Box>
+        <TestimonialSection />
       </Box>
       <ScrollToTopButton />
 
