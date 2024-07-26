@@ -34,6 +34,7 @@ const ScrollToTopButton = () => {
         position: "fixed",
         bottom: "2rem",
         right: "2rem",
+        bottom: { xs: "10vh" },
         display: { xs: isVisible ? "block" : "none" },
         zIndex: 1000,
       }}
@@ -43,7 +44,7 @@ const ScrollToTopButton = () => {
         variant="solid"
         sx={{
           borderRadius: "20%",
-          width: "3vw",
+          width: { lg: "3vw", xs: "10vw" },
           height: "5vh",
           minWidth: "3vw",
           minHeight: "5vh",
