@@ -34,7 +34,7 @@ const ScrollToTopButton = () => {
         position: "fixed",
         bottom: "2rem",
         right: "2rem",
-        display: { xs: "none", md: isVisible ? "block" : "none" },
+        display: { xs: isVisible ? "block" : "none" },
         zIndex: 1000,
       }}
     >
