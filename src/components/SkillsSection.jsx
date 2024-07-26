@@ -98,7 +98,7 @@ const SkillsSection = () => {
             variant="outlined"
             sx={{
               borderRadius: "md",
-              padding: 4,
+              padding: { lg: 4, sm: 1 },
               listStyle: "none",
               height: "100%",
             }}
