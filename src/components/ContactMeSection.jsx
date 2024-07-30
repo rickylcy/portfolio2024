@@ -110,6 +110,7 @@ const ContactMeSection = () => {
 
   return (
     <Box
+      id="contact"
       sx={{
         padding: { xs: "1rem", sm: "1.5rem", md: "2rem", lg: "2.5rem" },
         minHeight: "100vh",
