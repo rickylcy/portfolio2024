@@ -7,6 +7,7 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import profileImg from "../assets/profile.jpg";
 import MouseIcon from "@mui/icons-material/Mouse";
 import { Link as ScrollLink } from "react-scroll";
+import profileImage from "../assets/ricky1.jpg";
 
 const ProfileSection = () => {
   return (
@@ -108,7 +109,7 @@ const ProfileSection = () => {
         >
           <img
             className="home_img"
-            src={profileImg} // Replace with the actual image path
+            src={profileImage} // Replace with the actual image path
             alt="Profile Image"
             style={{ width: "100%", height: "100%" }}
           />

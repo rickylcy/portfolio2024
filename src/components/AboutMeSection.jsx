@@ -8,6 +8,7 @@ import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
 import DescriptionIcon from "@mui/icons-material/Description";
 import BackgroundModal from "./BackgroundModal";
 import ChildCareIcon from "@mui/icons-material/ChildCare";
+import profileImage from "../assets/ricky2.jpg";
 
 const AboutMeSection = () => {
   const [openBackground, setOpenBackground] = useState(false);
@@ -40,7 +41,7 @@ const AboutMeSection = () => {
         <Grid item xs={12} sm={12} md={5} lg={5}>
           <Box
             component="img"
-            src={profileImg}
+            src={profileImage}
             alt="Profile"
             sx={{
               width: { xs: "80%", sm: "80%", md: "100%", lg: "100%" },
