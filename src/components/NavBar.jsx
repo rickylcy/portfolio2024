@@ -32,7 +32,7 @@ const NavBar = ({ display }) => {
           level="body"
           sx={{ fontWeight: "bold", paddingLeft: "10vw" }}
         >
-          Ricky
+          Ricky Lau
         </Typography>
         <Box sx={{ display: "flex", gap: "20px", paddingRight: "10vw" }}>
           <ScrollLink
@@ -80,7 +80,7 @@ const NavBar = ({ display }) => {
             </Typography>
           </ScrollLink>
           <ScrollLink
-            to="qualification"
+            to="portfolio"
             smooth={true}
             duration={500}
             spy={true}

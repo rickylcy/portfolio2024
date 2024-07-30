@@ -22,8 +22,8 @@ const PortfolioSection = () => {
   const portfolioItems = [
     {
       title: "Visa Company Website",
-      category: "Web",
-      description: "Web Deveplopment for Visa-to-China",
+      category: ["Web", "Mobile-Web", "Responsive"],
+      description: "Web Development for Visa-to-China",
       image: VisaLogo,
       demoLink: "https://visatochina.com.au/",
       status: "Completed",
@@ -37,7 +37,7 @@ const PortfolioSection = () => {
     },
     {
       title: "Anyportal",
-      category: "Web",
+      category: ["Self-Learning", "Mobile-Web"],
       description: "Online Forum",
       image: AnyportalLogo,
       demoLink: "https://anyportal.vercel.app/",
@@ -52,7 +52,7 @@ const PortfolioSection = () => {
     },
     {
       title: "2D Barcode Mobile Ordering",
-      category: "Web",
+      category: ["Mobile-Web"],
       description: "Company Level Product",
       image: "https://via.placeholder.com/150",
       demoLink: "Demo",
@@ -66,15 +66,15 @@ const PortfolioSection = () => {
       ],
     },
     {
-      title: "Project Placeholder",
-      category: "TEST",
-      description: "Website Redesign",
+      title: "Portfolio (This site)",
+      category: ["Web", "Mobile-Web", "Responsive", "Self-Learning"],
+      description: "Portfolio for demo",
       image: "https://via.placeholder.com/150",
-      demoLink: "Demo",
-      status: "Completed",
-      skills: ["React", "CSS", "HTML"],
-      introduction: "This is a website redesign project.",
-      tasks: ["Redesign Layout", "Optimize Performance"],
+      demoLink: "https://portfolio2024-ricky.vercel.app/",
+      status: "In Progress",
+      skills: ["React", "Joy UI", "SMTP EmailJS"],
+      introduction: "This is a graphic design project.",
+      tasks: ["Develop UI", "Responsive UI", "Deploy"],
       screenshots: [
         "https://via.placeholder.com/150",
         "https://via.placeholder.com/150",
@@ -85,17 +85,19 @@ const PortfolioSection = () => {
   const filteredItems =
     activeCategory === "All"
       ? portfolioItems
-      : portfolioItems.filter((item) => item.category === activeCategory);
+      : portfolioItems.filter((item) => item.category.includes(activeCategory));
 
   const ButtonWrapper = styled(Box)({
     display: "flex",
     justifyContent: "center",
     gap: "1rem",
     marginBottom: "2rem",
+    flexWrap: "wrap", // Add this line to enable wrapping
   });
 
   return (
     <Box
+      id="portfolio"
       sx={{
         padding: { xs: "1rem", sm: "1.5rem", md: "2rem", lg: "2.5rem" },
         minHeight: "100vh",
@@ -146,18 +148,54 @@ const PortfolioSection = () => {
           </Button>
           <Button
             variant="plain"
-            onClick={() => handleCategoryChange("TEST")}
+            onClick={() => handleCategoryChange("Mobile-Web")}
             sx={{
               color:
-                activeCategory === "Design" ? "primary.main" : "text.primary",
+                activeCategory === "Mobile-Web"
+                  ? "primary.main"
+                  : "text.primary",
               borderBottom:
-                activeCategory === "Design"
+                activeCategory === "Mobile-Web"
                   ? "2px solid"
                   : "2px solid transparent",
               borderRadius: 0,
             }}
           >
-            TEST
+            Mobile-Web
+          </Button>
+          <Button
+            variant="plain"
+            onClick={() => handleCategoryChange("Responsive")}
+            sx={{
+              color:
+                activeCategory === "Responsive"
+                  ? "primary.main"
+                  : "text.primary",
+              borderBottom:
+                activeCategory === "Responsive"
+                  ? "2px solid"
+                  : "2px solid transparent",
+              borderRadius: 0,
+            }}
+          >
+            Responsive
+          </Button>
+          <Button
+            variant="plain"
+            onClick={() => handleCategoryChange("Self-Learning")}
+            sx={{
+              color:
+                activeCategory === "Self-Learning"
+                  ? "primary.main"
+                  : "text.primary",
+              borderBottom:
+                activeCategory === "Self-Learning"
+                  ? "2px solid"
+                  : "2px solid transparent",
+              borderRadius: 0,
+            }}
+          >
+            Self-Learning
           </Button>
         </ButtonWrapper>
       </Box>
@@ -195,7 +233,10 @@ const PortfolioSection = () => {
                     marginBottom: "1rem",
                   }}
                 />
-                <Typography level="h6" sx={{ marginBottom: "0.5rem" }}>
+                <Typography
+                  level="h6"
+                  sx={{ fontWeight: "bold", marginBottom: "0.5rem" }}
+                >
                   {item.title}
                 </Typography>
                 <Typography level="body2" sx={{ marginBottom: "0.5rem" }}>

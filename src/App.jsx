@@ -13,6 +13,7 @@ import Navigation from "./components/Navigation";
 import Home from "./pages/Home";
 import Grid from "@mui/joy/Grid";
 import BottomNavBar from "./components/BottomNavBar";
+import Footer from "./components/Footer";
 
 function App() {
   const location = useLocation();

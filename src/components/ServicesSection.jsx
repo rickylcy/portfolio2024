@@ -4,7 +4,7 @@ import { Box, Typography, Grid, Sheet, Button } from "@mui/joy";
 import ServiceDetails from "./ServiceDetails";
 import WebIcon from "@mui/icons-material/Web";
 import SupervisorAccountIcon from "@mui/icons-material/SupervisorAccount";
-import DesignServicesIcon from "@mui/icons-material/DesignServices";
+import TranslateIcon from "@mui/icons-material/Translate";
 
 const services = [
   {
@@ -32,9 +32,9 @@ const services = [
     ],
   },
   {
-    title: "Branding Designer",
+    title: "Trilingual Service",
     description: "View More",
-    icon: <DesignServicesIcon sx={{ fontSize: "2.5rem" }} />,
+    icon: <TranslateIcon sx={{ fontSize: "2.5rem" }} />,
     details: [
       "Brand identity design.",
       "Logo creation.",

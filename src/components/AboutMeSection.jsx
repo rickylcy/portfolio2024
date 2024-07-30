@@ -1,13 +1,20 @@
 // src/components/AboutMeSection.js
-import React from "react";
+import React, { useState } from "react";
 import { Box, Typography, Button, Grid, Sheet } from "@mui/joy";
 import profileImg from "../assets/profile.jpg";
 import LightbulbIcon from "@mui/icons-material/Lightbulb";
 import WorkIcon from "@mui/icons-material/Work";
 import HeadsetMicIcon from "@mui/icons-material/HeadsetMic";
 import DescriptionIcon from "@mui/icons-material/Description";
+import BackgroundModal from "./BackgroundModal";
+import ChildCareIcon from "@mui/icons-material/ChildCare";
 
 const AboutMeSection = () => {
+  const [openBackground, setOpenBackground] = useState(false);
+
+  const handleOpenBackground = () => setOpenBackground(true);
+  const handleCloseBackground = () => setOpenBackground(false);
+
   return (
     <Box
       id="about-me"
@@ -36,7 +43,7 @@ const AboutMeSection = () => {
             src={profileImg}
             alt="Profile"
             sx={{
-              width: { xs: "60%", sm: "80%", md: "100%", lg: "100%" },
+              width: { xs: "80%", sm: "80%", md: "100%", lg: "100%" },
               height: "100%",
               borderRadius: "8%",
               display: "block",
@@ -122,24 +129,48 @@ const AboutMeSection = () => {
             <Typography
               level="body1"
               p={{ xs: 0, sm: 2, md: 3, lg: 2 }}
-              m={{ xs: 2, sm: 2, md: 2, lg: 2 }}
+              m={{ xs: 1, sm: 2, md: 2, lg: 2 }}
             >
               Frontend developer, I create web pages with UI / UX user
               interface, I have years of experience and many clients are happy
               with the projects carried out.
             </Typography>
-            <Button
-              variant="solid"
+            <Box
               sx={{
-                bgcolor: "primary.main",
-                width: "auto",
+                display: "flex",
+                justifyContent: "space-between",
+                padding: 0,
+                margin: 1,
               }}
             >
-              Download CV <DescriptionIcon />
-            </Button>
+              <Button
+                variant="solid"
+                onClick={handleOpenBackground}
+                sx={{
+                  bgcolor: "primary.main",
+                  width: "auto",
+                  marginRight: 2,
+                }}
+              >
+                My Background
+                <ChildCareIcon sx={{ marginLeft: 1, fontSize: "1.5rem" }} />
+              </Button>
+              <Button
+                variant="solid"
+                sx={{
+                  bgcolor: "primary.main",
+                  width: "auto",
+                }}
+              >
+                Download CV
+                <DescriptionIcon sx={{ marginLeft: 1, fontSize: "1.5rem" }} />
+              </Button>
+            </Box>
           </Box>
         </Grid>
       </Grid>
+
+      <BackgroundModal open={openBackground} onClose={handleCloseBackground} />
     </Box>
   );
 };

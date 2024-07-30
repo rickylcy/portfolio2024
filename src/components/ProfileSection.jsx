@@ -1,9 +1,8 @@
 import "../App.css";
 import React from "react";
-import { Box, Typography, Button, Grid, Stack } from "@mui/joy";
-import InstagramIcon from "@mui/icons-material/Instagram";
-import SportsBasketballIcon from "@mui/icons-material/SportsBasketball";
+import { Box, Typography, Button, Grid, Stack, Link } from "@mui/joy";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import profileImg from "../assets/profile.jpg";
 import MouseIcon from "@mui/icons-material/Mouse";
@@ -41,9 +40,15 @@ const ProfileSection = () => {
               gap: 2,
             }}
           >
-            <InstagramIcon />
-            <SportsBasketballIcon />
-            <GitHubIcon />
+            <Link href="https://github.com/rickylcy" target="_blank">
+              <GitHubIcon sx={{ fontSize: "2rem", color: "primary.main" }} />
+            </Link>
+            <Link
+              href="https://www.linkedin.com/in/ching-yin-lau-457825206/"
+              target="_blank"
+            >
+              <LinkedInIcon sx={{ fontSize: "2rem", color: "primary.main" }} />
+            </Link>
           </Box>
         </Grid>
 
@@ -145,7 +150,7 @@ const ProfileSection = () => {
             offset={-70}
             style={{ cursor: "pointer" }}
           >
-            <MouseIcon />
+            <MouseIcon sx={{ fontSize: "1.5rem" }} />
             <Typography level="body2" sx={{ marginBottom: 1 }}>
               Scroll down
             </Typography>

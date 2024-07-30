@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import Box from "@mui/joy/Box";
 import ProfileSection from "../components/ProfileSection";
 import AboutMeSection from "../components/AboutMeSection";
@@ -8,6 +8,8 @@ import ServicesSection from "../components/ServicesSection";
 import QualificationSection from "../components/QualificationSection";
 import TestimonialSection from "../components/TestimonialSection";
 import PortfolioSection from "../components/PortfolioSection";
+import Footer from "../components/Footer";
+import ContactMeSection from "../components/ContactMeSection";
 
 function Home() {
   return (
@@ -18,6 +20,7 @@ function Home() {
         justifyContent: "center",
         alignItems: "center",
         padding: 2,
+        paddingBottom: "4rem",
       }}
     >
       <Box>
@@ -36,10 +39,16 @@ function Home() {
         <QualificationSection />
       </Box>
       <Box>
+        <PortfolioSection />
+      </Box>
+      <Box>
         <TestimonialSection />
       </Box>
       <Box>
-        <PortfolioSection />
+        <ContactMeSection />
+      </Box>
+      <Box>
+        <Footer />
       </Box>
       <ScrollToTopButton />
     </Box>
