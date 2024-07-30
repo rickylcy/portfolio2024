@@ -52,71 +52,65 @@ const AboutMeSection = () => {
           />
         </Grid>
         <Grid item xs={12} sm={12} md={7} lg={7} p={6}>
-          <Box
-            sx={{
-              flexDirection: "row",
-              display: "flex",
-              justifyContent: "center",
-              padding: 2,
-            }}
-          >
-            <Sheet
-              variant="outlined"
-              sx={{
-                borderRadius: "md",
-                p: 3,
-                listStyle: "none",
-                flexGrow: 1,
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
-              <LightbulbIcon />
-              <Typography level="h6">Experience</Typography>
-              <Typography level="body2" sx={{ color: "secondary.main" }}>
-                8+ Years
-              </Typography>
-            </Sheet>
-
-            <Sheet
-              variant="outlined"
-              sx={{
-                borderRadius: "md",
-                p: 3,
-                listStyle: "none",
-                flexGrow: 1,
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
-              <WorkIcon />
-              <Typography level="h6">Completed</Typography>
-              <Typography level="body2" sx={{ color: "secondary.main" }}>
-                48+ Projects
-              </Typography>
-            </Sheet>
-
-            <Sheet
-              variant="outlined"
-              sx={{
-                borderRadius: "md",
-                p: 3,
-                listStyle: "none",
-                flexGrow: 1,
-                display: "flex",
-                flexDirection: "column",
-                alignItems: "center",
-              }}
-            >
-              <HeadsetMicIcon />
-              <Typography level="h6">Support</Typography>
-              <Typography level="body2" sx={{ color: "secondary.main" }}>
-                Online 24/7
-              </Typography>
-            </Sheet>
-          </Box>
+          <Grid container justifyContent="center">
+            <Grid item xs={12} sm={4}>
+              <Sheet
+                variant="outlined"
+                sx={{
+                  borderRadius: "md",
+                  p: 3,
+                  listStyle: "none",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <LightbulbIcon />
+                <Typography level="h6">Experience</Typography>
+                <Typography level="body2" sx={{ color: "secondary.main" }}>
+                  8+ Years
+                </Typography>
+              </Sheet>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Sheet
+                variant="outlined"
+                sx={{
+                  borderRadius: "md",
+                  p: 3,
+                  listStyle: "none",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <WorkIcon />
+                <Typography level="h6">Completed</Typography>
+                <Typography level="body2" sx={{ color: "secondary.main" }}>
+                  48+ Projects
+                </Typography>
+              </Sheet>
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <Sheet
+                variant="outlined"
+                sx={{
+                  borderRadius: "md",
+                  p: 3,
+                  listStyle: "none",
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                }}
+              >
+                <HeadsetMicIcon />
+                <Typography level="h6">Support</Typography>
+                <Typography level="body2" sx={{ color: "secondary.main" }}>
+                  Online 24/7
+                </Typography>
+              </Sheet>
+            </Grid>
+          </Grid>
           <Box
             sx={{
               display: "flex",
