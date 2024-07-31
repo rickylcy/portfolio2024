@@ -28,9 +28,18 @@ const BackgroundModal = ({ open, onClose }) => {
           <Grid container spacing={4}>
             <Grid item xs={12} sm={6}>
               <Typography variant="body1">
-                Paragraph 1: Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                diam.
+                I’m originally from Hong Kong. My adventure in Australia started
+                in 2016 when I came here on a working holiday visa at 19. I
+                worked on a few farms, did some traveling, and lived in Brisbane
+                for about six months. It was an amazing experience that really
+                opened my eyes to the Australian way of life.
+              </Typography>
+
+              <Typography variant="body1">
+                In 2017, I went back to Hong Kong to see my family, but I
+                couldn’t stay away from Australia for long. In 2018, I returned
+                to study Computer Science at Queensland University of Technology
+                (QUT). That’s when my real journey in Australia began.
               </Typography>
             </Grid>
             <Grid item xs={12} sm={6}>
@@ -57,9 +66,13 @@ const BackgroundModal = ({ open, onClose }) => {
             </Grid>
             <Grid item xs={12} sm={6}>
               <Typography variant="body1">
-                Paragraph 2: Lorem ipsum dolor sit amet, consectetur adipiscing
-                elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus
-                diam.
+                <Typography variant="body1">
+                  My time at QUT was fantastic. I learned a lot about technology
+                  and web development, and it made me even more passionate about
+                  creating great things. From working on farms to studying at
+                  QUT, my journey has been full of learning and growth, and I’m
+                  excited to keep moving forward in my career as a developer.
+                </Typography>
               </Typography>
             </Grid>
           </Grid>

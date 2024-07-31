@@ -38,21 +38,21 @@ const AboutMeSection = () => {
         My introduction
       </Typography>
       <Grid container spacing={{ xs: 0, sm: 0, md: 4, lg: 4 }}>
-        <Grid item xs={12} sm={12} md={5} lg={5}>
+        <Grid item xs={12} sm={12} md={4} lg={4}>
           <Box
             component="img"
             src={profileImage}
             alt="Profile"
             sx={{
               width: { xs: "80%", sm: "80%", md: "100%", lg: "100%" },
-              height: "100%",
+              height: "auto",
               borderRadius: "8%",
               display: "block",
               margin: "0 auto", // Centers the image
             }}
           />
         </Grid>
-        <Grid item xs={12} sm={12} md={7} lg={7} p={6}>
+        <Grid item xs={12} sm={12} md={8} lg={8} p={6}>
           <Grid container justifyContent="center">
             <Grid item xs={12} sm={4}>
               <Sheet
@@ -67,9 +67,9 @@ const AboutMeSection = () => {
                 }}
               >
                 <LightbulbIcon />
-                <Typography level="h6">Experience</Typography>
+                <Typography level="h6">Junior Developer</Typography>
                 <Typography level="body2" sx={{ color: "secondary.main" }}>
-                  8+ Years
+                  2+ Years
                 </Typography>
               </Sheet>
             </Grid>
@@ -88,7 +88,7 @@ const AboutMeSection = () => {
                 <WorkIcon />
                 <Typography level="h6">Completed</Typography>
                 <Typography level="body2" sx={{ color: "secondary.main" }}>
-                  48+ Projects
+                  10+ Projects
                 </Typography>
               </Sheet>
             </Grid>
@@ -105,9 +105,9 @@ const AboutMeSection = () => {
                 }}
               >
                 <HeadsetMicIcon />
-                <Typography level="h6">Support</Typography>
+                <Typography level="h6">Continuous Learning</Typography>
                 <Typography level="body2" sx={{ color: "secondary.main" }}>
-                  Online 24/7
+                  Always Evolving
                 </Typography>
               </Sheet>
             </Grid>
@@ -126,9 +126,13 @@ const AboutMeSection = () => {
               p={{ xs: 0, sm: 2, md: 3, lg: 2 }}
               m={{ xs: 1, sm: 2, md: 2, lg: 2 }}
             >
-              Frontend developer, I create web pages with UI / UX user
-              interface, I have years of experience and many clients are happy
-              with the projects carried out.
+              Frontend developer passionate about creating intuitive and
+              user-friendly web pages using React and modern UI frameworks like
+              Material UI and Bootstrap. Although still at the junior level, I
+              am eager to learn and constantly improving my skills through
+              self-learning and hands-on projects. My journey includes
+              developing a mobile ordering app and various other projects that
+              showcase my dedication and growth as a developer.
             </Typography>
             <Box
               sx={{
