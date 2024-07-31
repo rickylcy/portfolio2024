@@ -19,6 +19,7 @@ const ProjectDetails = ({
   status,
   skills,
   introduction,
+  technologies,
   screenshots,
   tasks,
 }) => {
@@ -52,8 +53,15 @@ const ProjectDetails = ({
           Introduction: {introduction}
         </Typography>
         <Typography level="body2" sx={{ mb: 2 }}>
-          Skills Used: {skills.join(", ")}
+          Technologies Used:
         </Typography>
+        <List>
+          {technologies.map((tech, index) => (
+            <ListItem key={index}>
+              <ListItemContent>{tech}</ListItemContent>
+            </ListItem>
+          ))}
+        </List>
         <Typography level="body2" sx={{ mb: 2 }}>
           Tasks:
         </Typography>

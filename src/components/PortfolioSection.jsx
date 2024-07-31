@@ -27,9 +27,20 @@ const PortfolioSection = () => {
       image: VisaLogo,
       demoLink: "https://visatochina.com.au/",
       status: "Completed",
-      skills: ["React", "CSS", "HTML"],
-      introduction: "This is a Visa Company Website.",
-      tasks: ["Develop UI", "Integrate API", "Deploy"],
+      introduction:
+        "This is a Visa Company Website which I have done it with an actual client in Brisbane. Developed a responsive web application, 'Visa to China,' designed to provide comprehensive information and assistance for individuals and businesses in Australia seeking visas to China. The project includes sections for news, FAQs, visa types, and application guidelines. It integrates social media elements like Facebook and highlights important travel tips and policies.",
+      technologies: [
+        "React: For building dynamic and interactive user interfaces.",
+        "Material-UI: For responsive and aesthetically pleasing UI components.",
+        "JavaScript: For implementing dynamic functionality.",
+        "HTML/CSS: For structuring and styling the application.",
+        "Facebook SDK: For embedding social media widgets.",
+      ],
+      tasks: [
+        "Develop UI: Designed and developed the user interface using React and Material-UI. Ensured responsive design for both web and mobile views.",
+        "Integrate API: Integrated various APIs to enhance functionality and user experience.",
+        "Deploy: Deployed and hosted the application and ensured its smooth operation.",
+      ],
       screenshots: [
         "https://via.placeholder.com/150",
         "https://via.placeholder.com/150",
@@ -42,9 +53,18 @@ const PortfolioSection = () => {
       image: AnyportalLogo,
       demoLink: "https://anyportal.vercel.app/",
       status: "In Progress",
-      skills: ["Next.js", "CSS", "JavaScript"],
-      introduction: "This is an online forum.",
-      tasks: ["Design UI", "Implement Authentication"],
+      introduction:
+        "This is an online forum project developed to facilitate discussions and information sharing among users.",
+      technologies: [
+        "Next.js: For server-rendered React applications.",
+        "CSS: For styling the application.",
+        "JavaScript: For implementing dynamic functionality.",
+      ],
+      tasks: [
+        "Design UI: Created user-friendly and responsive designs.",
+        "Implement Authentication: Integrated authentication systems to secure user data.",
+        "Database Design and Implementation: Setup database with MongoDB to store and fetch data.",
+      ],
       screenshots: [
         "https://via.placeholder.com/150",
         "https://via.placeholder.com/150",
@@ -57,9 +77,19 @@ const PortfolioSection = () => {
       image: "https://via.placeholder.com/150",
       demoLink: "Demo",
       status: "In Testing Stage",
-      skills: ["React", "Bootstrap", "Express", "REST"],
-      introduction: "This is a graphic design project.",
-      tasks: ["Develop UI", "Integrate API", "Deploy"],
+      introduction:
+        "This is a company product designed for mobile ordering using 2D barcodes in restaurants.",
+      technologies: [
+        "React: For building dynamic and interactive user interfaces.",
+        "Bootstrap: For responsive and aesthetically pleasing UI components.",
+        "Express: For building server-side applications.",
+        "REST: For implementing RESTful APIs.",
+      ],
+      tasks: [
+        "Develop UI: Designed and developed the user interface using React and Bootstrap.",
+        "Integrate API: Integrated various APIs to enhance functionality and user experience.",
+        "Deploy: Deployed and hosted the application and ensured its smooth operation.",
+      ],
       screenshots: [
         "https://via.placeholder.com/150",
         "https://via.placeholder.com/150",
@@ -72,10 +102,17 @@ const PortfolioSection = () => {
       image: "https://via.placeholder.com/150",
       demoLink: "Demo",
       status: "Completed",
-      skills: ["C#", "WPF"],
       introduction:
-        "This is a app for the second display for POS on the customer side to let customer see what they have ordered. At the same time, the App is capable of advertising with slideshow images. The app is also responsive to different screen size according to the second display screen resolution. This is my first C# product that uses for user purposes. I have developed a basic skills of C# with WPF through the process.",
-      tasks: ["Develop UI", "Responsive UI", "desktop application"],
+        "This is an app for the second display for POS on the customer side to let customers see what they have ordered. It is capable of advertising with slideshow images and is responsive to different screen sizes according to the second display screen resolution.",
+      technologies: [
+        "C#: For building dynamic and interactive user interfaces.",
+        "WPF: For responsive and aesthetically pleasing UI components.",
+      ],
+      tasks: [
+        "Develop UI: Designed and developed the user interface using C# and WPF.",
+        "Responsive UI: Ensured the app is responsive to different screen sizes.",
+        "Desktop Application: Developed a desktop application to display customer orders and advertisements.",
+      ],
       screenshots: [
         "https://via.placeholder.com/150",
         "https://via.placeholder.com/150",
@@ -88,9 +125,18 @@ const PortfolioSection = () => {
       image: "https://via.placeholder.com/150",
       demoLink: "https://portfolio2024-ricky.vercel.app/",
       status: "In Progress",
-      skills: ["React", "Joy UI", "SMTP EmailJS"],
-      introduction: "This is a graphic design project.",
-      tasks: ["Develop UI", "Responsive UI", "Deploy"],
+      introduction:
+        "This is a personal portfolio site designed to introduction myself and showcase various projects and skills.",
+      technologies: [
+        "React: For building dynamic and interactive user interfaces.",
+        "Joy UI: For responsive and aesthetically pleasing UI components.",
+        "SMTP EmailJS: For integrating email functionality.",
+      ],
+      tasks: [
+        "Develop UI: Designed and developed the user interface using React and Joy UI.",
+        "Responsive UI: Ensured the site is responsive to different screen sizes.",
+        "Deploy: Deployed and hosted the application and ensured its smooth operation.",
+      ],
       screenshots: [
         "https://via.placeholder.com/150",
         "https://via.placeholder.com/150",
@@ -306,6 +352,7 @@ const PortfolioSection = () => {
           status={selectedProject.status}
           skills={selectedProject.skills}
           introduction={selectedProject.introduction}
+          technologies={selectedProject.technologies} // Added this line
           tasks={selectedProject.tasks}
           screenshots={selectedProject.screenshots}
         />

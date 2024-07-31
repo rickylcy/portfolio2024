@@ -3,15 +3,13 @@ import { Box, Typography, Sheet, Avatar, Grid } from "@mui/joy";
 
 const testimonials = [
   {
-    name: "John Doe",
-    feedback:
-      "A really good job, all aspects of the project were followed step by step and with good results.",
+    name: "---- ----",
+    feedback: "To be added later..",
     image: "https://via.placeholder.com/150",
   },
   {
-    name: "Harry Clinton",
-    feedback:
-      "A really good job, all aspects of the project were followed step by step and with good results.",
+    name: " - -- - - -",
+    feedback: "To be added later..",
     image: "https://via.placeholder.com/150",
   },
 ];
@@ -44,6 +42,7 @@ const TestimonialSection = () => {
             <Sheet
               variant="outlined"
               sx={{
+                width: { xs: "80vw", sm: "50vw", md: "40vw", lg: "30vw" },
                 borderRadius: "md",
                 padding: 4,
                 display: "flex",
