@@ -53,13 +53,29 @@ const PortfolioSection = () => {
     {
       title: "2D Barcode Mobile Ordering",
       category: ["Mobile-Web"],
-      description: "Company Level Product",
+      description: "Company Product",
       image: "https://via.placeholder.com/150",
       demoLink: "Demo",
       status: "In Testing Stage",
       skills: ["React", "Bootstrap", "Express", "REST"],
       introduction: "This is a graphic design project.",
       tasks: ["Develop UI", "Integrate API", "Deploy"],
+      screenshots: [
+        "https://via.placeholder.com/150",
+        "https://via.placeholder.com/150",
+      ],
+    },
+    {
+      title: "POS Customer Display App",
+      category: ["Application", "Responsive"],
+      description: "Company Product for POS",
+      image: "https://via.placeholder.com/150",
+      demoLink: "Demo",
+      status: "Completed",
+      skills: ["C#", "WPF"],
+      introduction:
+        "This is a app for the second display for POS on the customer side to let customer see what they have ordered. At the same time, the App is capable of advertising with slideshow images. The app is also responsive to different screen size according to the second display screen resolution. This is my first C# product that uses for user purposes. I have developed a basic skills of C# with WPF through the process.",
+      tasks: ["Develop UI", "Responsive UI", "desktop application"],
       screenshots: [
         "https://via.placeholder.com/150",
         "https://via.placeholder.com/150",
@@ -196,6 +212,23 @@ const PortfolioSection = () => {
             }}
           >
             Self-Learning
+          </Button>
+          <Button
+            variant="plain"
+            onClick={() => handleCategoryChange("Application")}
+            sx={{
+              color:
+                activeCategory === "Application"
+                  ? "primary.main"
+                  : "text.primary",
+              borderBottom:
+                activeCategory === "Application"
+                  ? "2px solid"
+                  : "2px solid transparent",
+              borderRadius: 0,
+            }}
+          >
+            Application
           </Button>
         </ButtonWrapper>
       </Box>
