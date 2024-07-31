@@ -7,7 +7,7 @@ import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 import profileImg from "../assets/profile.jpg";
 import MouseIcon from "@mui/icons-material/Mouse";
 import { Link as ScrollLink } from "react-scroll";
-import profileImage from "../assets/ricky1.jpg";
+import profileImage from "../assets/test.png";
 
 const ProfileSection = () => {
   return (
