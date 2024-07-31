@@ -51,7 +51,7 @@ const PortfolioSection = () => {
       category: ["Self-Learning", "Mobile-Web"],
       description: "Online Forum",
       image: AnyportalLogo,
-      demoLink: "https://anyportal.vercel.app/category/0",
+      demoLink: "https://anyportal.vercel.app",
       status: "In Progress",
       introduction:
         "This is an online forum project developed to facilitate discussions and information sharing among users.",
