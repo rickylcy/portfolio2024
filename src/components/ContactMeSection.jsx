@@ -216,8 +216,6 @@ const ContactMeSection = () => {
                 name="message"
                 placeholder="Write your message"
                 fullWidth
-                multiline
-                rows={4}
                 value={formData.message}
                 onChange={handleChange}
               />

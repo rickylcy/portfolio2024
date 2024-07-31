@@ -160,6 +160,9 @@ const AboutMeSection = () => {
                   bgcolor: "primary.main",
                   width: "auto",
                 }}
+                href="../../public/ricky-resume.pdf"
+                download="ricky-resume.pdf"
+                component="a"
               >
                 Download CV
                 <DescriptionIcon sx={{ marginLeft: 1, fontSize: "1.5rem" }} />
