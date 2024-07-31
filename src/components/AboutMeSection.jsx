@@ -160,7 +160,7 @@ const AboutMeSection = () => {
                   bgcolor: "primary.main",
                   width: "auto",
                 }}
-                href="../../public/ricky-resume.pdf"
+                href="https://portfolio2024-ricky.vercel.app/ricky-resume.pdf"
                 download="ricky-resume.pdf"
                 component="a"
               >
