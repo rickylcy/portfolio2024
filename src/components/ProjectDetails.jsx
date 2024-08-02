@@ -86,7 +86,7 @@ const ProjectDetails = ({
               src={screenshot}
               alt={`Screenshot ${index + 1}`}
               sx={{
-                width: "45%",
+                width: "100%",
                 borderRadius: "8px",
                 boxShadow: "0 2px 4px rgba(0,0,0,0.1)",
                 mb: 2,

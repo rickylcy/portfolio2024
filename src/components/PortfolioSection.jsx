@@ -6,6 +6,7 @@ import VisaLogo from "../assets/visa-logo.jpg";
 import AnyportalLogo from "../assets/anyportal.png";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import ProjectDetails from "./ProjectDetails"; // Import the ProjectDetails component
+import secondDisplayImage from "../assets/second-display.jpg";
 
 const PortfolioSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -99,7 +100,7 @@ const PortfolioSection = () => {
       title: "POS Customer Display App",
       category: ["Application", "Responsive"],
       description: "Company Product for POS",
-      image: "https://via.placeholder.com/150",
+      image: secondDisplayImage,
       demoLink: "Demo",
       status: "Completed",
       introduction:
@@ -113,10 +114,7 @@ const PortfolioSection = () => {
         "Responsive UI: Ensured the app is responsive to different screen sizes.",
         "Desktop Application: Developed a desktop application to display customer orders and advertisements.",
       ],
-      screenshots: [
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
-      ],
+      screenshots: [secondDisplayImage],
     },
     {
       title: "Portfolio (This site)",
