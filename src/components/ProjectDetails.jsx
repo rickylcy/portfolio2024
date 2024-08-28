@@ -78,7 +78,13 @@ const ProjectDetails = ({
         <Typography level="body2" sx={{ mt: 2 }}>
           Screenshots:
         </Typography>
-        <Box sx={{ display: "flex", gap: 2, flexWrap: "wrap" }}>
+        <Box
+          sx={{
+            display: "grid",
+            gridTemplateColumns: { xs: "1fr", sm: "1fr 1fr" },
+            gap: 2,
+          }}
+        >
           {screenshots.map((screenshot, index) => (
             <Box
               key={index}

@@ -7,7 +7,8 @@ import AnyportalLogo from "../assets/anyportal.png";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import ProjectDetails from "./ProjectDetails"; // Import the ProjectDetails component
 import secondDisplayImage from "../assets/second-display.jpg";
-
+import chatapp1 from "../assets/chat-app-1.png";
+import chatapp2 from "../assets/chat-app-2.png";
 const PortfolioSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
@@ -69,10 +70,7 @@ const PortfolioSection = () => {
         "Google Authentication: Integrated Google sign-in to allow users to authenticate easily and securely.",
         "Deployment: Deployed the application on Vercel, ensuring smooth performance and availability.",
       ],
-      screenshots: [
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
-      ],
+      screenshots: [chatapp1, chatapp2],
     },
     {
       title: "Anyportal",
