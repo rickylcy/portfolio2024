@@ -47,6 +47,33 @@ const PortfolioSection = () => {
         "https://via.placeholder.com/150",
       ],
     },
+
+    {
+      title: "Realtime Chat App",
+      category: ["Web", "Mobile-Web", "Responsive", "Self-Learning"],
+      description: "Responsive Chat App with Firebase",
+      image: "https://via.placeholder.com/150",
+      demoLink: "https://ricky-chat-app.vercel.app/",
+      status: "Completed",
+      introduction:
+        "Developed a responsive Realtime Chat App using Firebase and React, designed to provide real-time communication between users. This project demonstrates my ability to integrate Firebase for authentication and Firestore for real-time data handling. The application is fully responsive, ensuring a seamless user experience across desktop and mobile devices. It includes features like Google authentication, real-time message updates, and a dark mode toggle, making it both functional and user-friendly.",
+      technologies: [
+        "React: Built the user interface and managed state efficiently with React hooks.",
+        "Firebase (Firestore & Authentication): Implemented real-time database updates and user authentication for secure login and messaging.",
+        "Joy UI: Utilized for modern, responsive, and aesthetically pleasing UI components.",
+      ],
+      tasks: [
+        "UI Development: Designed and developed a responsive user interface with React and Joy UI, ensuring compatibility across web and mobile platforms.",
+        "Firebase Integration: Set up Firebase for user authentication, real-time data storage, and message retrieval using Firestore.",
+        "Dark Mode Implementation: Added a dark mode toggle to enhance user experience and accessibility.",
+        "Google Authentication: Integrated Google sign-in to allow users to authenticate easily and securely.",
+        "Deployment: Deployed the application on Vercel, ensuring smooth performance and availability.",
+      ],
+      screenshots: [
+        "https://via.placeholder.com/150",
+        "https://via.placeholder.com/150",
+      ],
+    },
     {
       title: "Anyportal",
       category: ["Self-Learning", "Mobile-Web"],
@@ -55,7 +82,7 @@ const PortfolioSection = () => {
       demoLink: "https://anyportal.vercel.app",
       status: "In Progress",
       introduction:
-        "This is an online forum project developed to facilitate discussions and information sharing among users.",
+        "This is an online forum project developed to facilitate discussions and information sharing among users.(Currently there is a unknown 404 issue. please close the tab and click the link again)",
       technologies: [
         "Next.js: For server-rendered React applications.",
         "CSS: For styling the application.",
