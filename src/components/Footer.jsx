@@ -21,7 +21,7 @@ const Footer = () => {
       <Grid container justifyContent="center" spacing={3}>
         <Grid item>
           <ScrollLink
-            to="about"
+            to="about-me"
             smooth={true}
             duration={500}
             spy={true}
