@@ -9,6 +9,9 @@ import ProjectDetails from "./ProjectDetails"; // Import the ProjectDetails comp
 import secondDisplayImage from "../assets/second-display.jpg";
 import chatapp1 from "../assets/chat-app-1.png";
 import chatapp2 from "../assets/chat-app-2.png";
+import report from "../assets/report.png";
+import report1 from "../assets/report-1.png";
+
 const PortfolioSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
   const [selectedProject, setSelectedProject] = useState(null);
@@ -48,7 +51,75 @@ const PortfolioSection = () => {
         "https://via.placeholder.com/150",
       ],
     },
-
+    {
+      title: "Sales Report Website",
+      category: ["Web", "Mobile-Web", "Responsive"],
+      description: "Company Product",
+      image: "https://via.placeholder.com/150",
+      demoLink: "", // Update this with the actual link if available
+      status: "Completed",
+      introduction:
+        "This Sales Report Website was developed to provide an intuitive and responsive platform for visualizing sales data. The project involved creating dynamic charts, detailed reports, and dashboards tailored for different user roles within the company. The site is fully responsive, ensuring seamless access from both desktop and mobile devices.",
+      technologies: [
+        "React: For building dynamic and interactive user interfaces.",
+        "Material-UI: For responsive and aesthetically pleasing UI components.",
+        "JavaScript: For implementing dynamic functionality.",
+        "Chart.js: For creating dynamic and interactive data visualizations.",
+        "HTML/CSS: For structuring and styling the application.",
+      ],
+      tasks: [
+        "Develop UI: Designed and developed the user interface using React and Material-UI. Ensured responsive design for both web and mobile views.",
+        "Integrate API: Integrated various APIs to fetch and display sales data in real-time.",
+        "Data Visualization: Implemented dynamic charts and graphs using Chart.js to visualize sales trends and performance metrics.",
+        "Deploy: Deployed and hosted the application, ensuring its smooth operation and quick access to sales data.",
+      ],
+      screenshots: [report, report1],
+    },
+    {
+      title: "2D Barcode Mobile Ordering",
+      category: ["Mobile-Web"],
+      description: "Company Product",
+      image: "https://via.placeholder.com/150",
+      demoLink: "",
+      status: "In Testing Stage",
+      introduction:
+        "This is a company product designed for mobile ordering using 2D barcodes in restaurants.",
+      technologies: [
+        "React: For building dynamic and interactive user interfaces.",
+        "Bootstrap: For responsive and aesthetically pleasing UI components.",
+        "Express: For building server-side applications.",
+        "REST: For implementing RESTful APIs.",
+      ],
+      tasks: [
+        "Develop UI: Designed and developed the user interface using React and Bootstrap.",
+        "Integrate API: Integrated various APIs to enhance functionality and user experience.",
+        "Deploy: Deployed and hosted the application and ensured its smooth operation.",
+      ],
+      screenshots: [
+        "https://via.placeholder.com/150",
+        "https://via.placeholder.com/150",
+      ],
+    },
+    {
+      title: "POS Customer Display App",
+      category: ["Application", "Responsive"],
+      description: "Company Product for POS",
+      image: secondDisplayImage,
+      demoLink: "",
+      status: "Completed",
+      introduction:
+        "This is an app for the second display for POS on the customer side to let customers see what they have ordered. It is capable of advertising with slideshow images and is responsive to different screen sizes according to the second display screen resolution.",
+      technologies: [
+        "C#: For building dynamic and interactive user interfaces.",
+        "WPF: For responsive and aesthetically pleasing UI components.",
+      ],
+      tasks: [
+        "Develop UI: Designed and developed the user interface using C# and WPF.",
+        "Responsive UI: Ensured the app is responsive to different screen sizes.",
+        "Desktop Application: Developed a desktop application to display customer orders and advertisements.",
+      ],
+      screenshots: [secondDisplayImage],
+    },
     {
       title: "Realtime Chat App",
       category: ["Web", "Mobile-Web", "Responsive", "Self-Learning"],
@@ -96,51 +167,7 @@ const PortfolioSection = () => {
         "https://via.placeholder.com/150",
       ],
     },
-    {
-      title: "2D Barcode Mobile Ordering",
-      category: ["Mobile-Web"],
-      description: "Company Product",
-      image: "https://via.placeholder.com/150",
-      demoLink: "Demo",
-      status: "In Testing Stage",
-      introduction:
-        "This is a company product designed for mobile ordering using 2D barcodes in restaurants.",
-      technologies: [
-        "React: For building dynamic and interactive user interfaces.",
-        "Bootstrap: For responsive and aesthetically pleasing UI components.",
-        "Express: For building server-side applications.",
-        "REST: For implementing RESTful APIs.",
-      ],
-      tasks: [
-        "Develop UI: Designed and developed the user interface using React and Bootstrap.",
-        "Integrate API: Integrated various APIs to enhance functionality and user experience.",
-        "Deploy: Deployed and hosted the application and ensured its smooth operation.",
-      ],
-      screenshots: [
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
-      ],
-    },
-    {
-      title: "POS Customer Display App",
-      category: ["Application", "Responsive"],
-      description: "Company Product for POS",
-      image: secondDisplayImage,
-      demoLink: "Demo",
-      status: "Completed",
-      introduction:
-        "This is an app for the second display for POS on the customer side to let customers see what they have ordered. It is capable of advertising with slideshow images and is responsive to different screen sizes according to the second display screen resolution.",
-      technologies: [
-        "C#: For building dynamic and interactive user interfaces.",
-        "WPF: For responsive and aesthetically pleasing UI components.",
-      ],
-      tasks: [
-        "Develop UI: Designed and developed the user interface using C# and WPF.",
-        "Responsive UI: Ensured the app is responsive to different screen sizes.",
-        "Desktop Application: Developed a desktop application to display customer orders and advertisements.",
-      ],
-      screenshots: [secondDisplayImage],
-    },
+
     {
       title: "Portfolio (This site)",
       category: ["Web", "Mobile-Web", "Responsive", "Self-Learning"],
@@ -352,16 +379,18 @@ const PortfolioSection = () => {
                   <VisibilityIcon />
                   Details
                 </Button>
-                <Button
-                  variant="solid"
-                  component="a"
-                  href={item.demoLink}
-                  target="_blank"
-                  sx={{ bgcolor: "text.secondary" }}
-                >
-                  <OpenInNewIcon />
-                  Demo
-                </Button>
+                {item.demoLink !== "" && (
+                  <Button
+                    variant="solid"
+                    component="a"
+                    href={item.demoLink}
+                    target="_blank"
+                    sx={{ bgcolor: "text.secondary" }}
+                  >
+                    <OpenInNewIcon />
+                    Demo
+                  </Button>
+                )}
               </Sheet>
             </Grid>
           ))}
