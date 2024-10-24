@@ -4,6 +4,8 @@ import { styled } from "@mui/system";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import VisaLogo from "../assets/visa-logo.jpg";
 import AnyportalLogo from "../assets/anyportal.png";
+import anyportal from "../assets/anyportal-1.png";
+import anyportal1 from "../assets/anyportal-2.png";
 import VisibilityIcon from "@mui/icons-material/Visibility";
 import ProjectDetails from "./ProjectDetails"; // Import the ProjectDetails component
 import secondDisplayImage from "../assets/second-display.jpg";
@@ -11,6 +13,8 @@ import chatapp1 from "../assets/chat-app-1.png";
 import chatapp2 from "../assets/chat-app-2.png";
 import report from "../assets/report.png";
 import report1 from "../assets/report-1.png";
+import movie from "../assets/movie.png";
+import movie1 from "../assets/movie1.png";
 
 const PortfolioSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -50,6 +54,26 @@ const PortfolioSection = () => {
         "https://via.placeholder.com/150",
         "https://via.placeholder.com/150",
       ],
+    },
+    {
+      title: "IMDb Clone Movie Portal",
+      category: ["Web", "Mobile-Web", "Responsive", "Self-Learning"],
+      description: "Responsive Movie Searching Platform",
+      image: "https://via.placeholder.com/150",
+      demoLink: "https://ricky-movie-portal.vercel.app/",
+      status: "Completed",
+      introduction:
+        "This project is built with Next.js and Tailwind CSS. It is the first practicing project for me to learn Next.js and Tailwind CSS. It is designed to help user to browse movie catergorised by either Trending or Top Rated. Or the use could even search movies with keyword with the search filter. The app list out the release date and rating of each movie. It integrates with TMDB api to fetch all the data.",
+      technologies: [
+        "Nextjs: For building app router and create the web appliation with React components.",
+        "TailwindCSS: For responsive and aesthetically pleasing UI components.",
+      ],
+      tasks: [
+        "Develop UI: Designed and developed the user interface using React components and TailwindCSS. Ensured responsive design for both web and mobile views.",
+        "Integrate API: Integrated with TMDb API to enhance functionality and user experience.",
+        "Deploy: Deployed and hosted the application on Vercel",
+      ],
+      screenshots: [movie, movie1],
     },
     {
       title: "Sales Report Website",
@@ -162,10 +186,7 @@ const PortfolioSection = () => {
         "Implement Authentication: Integrated authentication systems to secure user data.",
         "Database Design and Implementation: Setup database with MongoDB to store and fetch data.",
       ],
-      screenshots: [
-        "https://via.placeholder.com/150",
-        "https://via.placeholder.com/150",
-      ],
+      screenshots: [anyportal, anyportal1],
     },
 
     {
