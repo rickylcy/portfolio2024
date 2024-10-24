@@ -13,8 +13,11 @@ import chatapp1 from "../assets/chat-app-1.png";
 import chatapp2 from "../assets/chat-app-2.png";
 import report from "../assets/report.png";
 import report1 from "../assets/report-1.png";
+import IMDB from "../assets/IMDB.png";
 import movie from "../assets/movie.png";
 import movie1 from "../assets/movie1.png";
+import weather from "../assets/weather.jpg";
+import weather1 from "../assets/weather-1.png";
 
 const PortfolioSection = () => {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -59,7 +62,7 @@ const PortfolioSection = () => {
       title: "IMDb Clone Movie Portal",
       category: ["Web", "Mobile-Web", "Responsive", "Self-Learning"],
       description: "Responsive Movie Searching Platform",
-      image: "https://via.placeholder.com/150",
+      image: IMDB,
       demoLink: "https://ricky-movie-portal.vercel.app/",
       status: "Completed",
       introduction:
@@ -74,6 +77,25 @@ const PortfolioSection = () => {
         "Deploy: Deployed and hosted the application on Vercel",
       ],
       screenshots: [movie, movie1],
+    },
+    {
+      title: "Weather App",
+      category: ["Web", "Self-Learning"],
+      description: "Weather Comparison App",
+      image: weather,
+      demoLink: "https://ricky-weather-app.vercel.app/",
+      status: "Completed",
+      introduction:
+        "This project is built with React and Redux. It is one of my practicing app to learn Redux. It is designed to compare the weather of two cities, one is default to be Hong Kong and the other one is any cities in Australia that can be chosen by user. The app also shows the time zone difference of the cities. It integrates with OpenWeatherMap api to fetch all the data.",
+      technologies: [
+        "Redux: For managing state across different parts of the application.",
+      ],
+      tasks: [
+        "Develop UI: Designed and developed the user interface using React components and SCSS.",
+        "Integrate API: Integrated with OpenWeatherMap API to show weather data.",
+        "Deploy: Deployed and hosted the application on Vercel",
+      ],
+      screenshots: [weather1],
     },
     {
       title: "Sales Report Website",
